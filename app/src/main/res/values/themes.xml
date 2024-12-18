@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ProjectUAS" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorOnPrimary">@android:color/white</item> <!-- Warna teks putih -->
+        <item name="android:textColorPrimary">@android:color/black</item> <!-- Atur teks default hitam -->
+    </style>
+
+    <style name="Theme.ProjectUAS" parent="Base.Theme.ProjectUAS" />
+    <style name="CustomAlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <!-- Warna teks di AlertDialog -->
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!-- Warna background AlertDialog -->
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+</resources>

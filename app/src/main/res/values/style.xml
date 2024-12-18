@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/rounded_input</item>
+    </style>
+
+    <!-- Style untuk RelativeLayout -->
+    <style name="CustomRelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/rounded_input_custom</item>
+    </style>
+
+
+    <style name="CustomRoundedButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="CustomTextView18Bold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="CustomTextViewSplash" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/splash_regular</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="CustomTextViewPrincessSofia" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/princesssofia_regular</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="CustomTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="CustomActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">#002BFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+
+</resources>

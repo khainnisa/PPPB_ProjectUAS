@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Gambar Penginapan -->
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Gambar Penginapan" />
+
+        <!-- Nama Penginapan -->
+        <TextView
+            android:id="@+id/detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Penginapan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@android:color/black"/>
+
+        <!-- Lokasi Penginapan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_location"
+                android:tint="@color/gray" />
+
+            <TextView
+                android:id="@+id/detail_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lokasi Penginapan"
+                android:textSize="16sp"
+                android:paddingStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <!-- Harga Penginapan -->
+        <TextView
+            android:id="@+id/detail_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. 500,000/malam"
+            android:textSize="18sp"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            />
+
+        <!-- Deskripsi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi lengkap penginapan akan ditampilkan di sini. Informasi tentang penginapan, suasana, atau keunggulan yang ditawarkan."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/black"/>
+
+        <!-- Fasilitas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fasilitas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/detail_facilities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- WiFi Gratis\n- Kolam Renang\n- AC\n- Parkir Luas"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/black"/>
+
+        <!-- Tombol Aksi -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kembali"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            />
+    </LinearLayout>
+</ScrollView>

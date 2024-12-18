@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/editImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Tombol Ubah Gambar -->
+        <Button
+            android:id="@+id/btnChangeImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubah Gambar"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Nama Penginapan -->
+        <TextView
+            android:text="Nama Penginapan"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Penginapan" />
+
+        <!-- Lokasi Penginapan -->
+        <TextView
+            android:text="Lokasi Penginapan"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lokasi Penginapan" />
+
+        <!-- Harga Penginapan -->
+        <TextView
+            android:text="Harga Penginapan"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga Penginapan"
+            android:inputType="number" />
+
+        <!-- Deskripsi Penginapan -->
+        <TextView
+            android:text="Deskripsi Penginapan"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi Penginapan"
+            android:inputType="textMultiLine" />
+
+        <!-- Fasilitas -->
+        <TextView
+            android:text="Fasilitas"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editFacilities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fasilitas"
+            android:inputType="text" />
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

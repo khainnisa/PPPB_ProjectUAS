@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Gambar Preview -->
+        <ImageView
+            android:id="@+id/add_image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="40dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_add_photo"
+            android:contentDescription="Preview Gambar"
+            android:layout_marginBottom="16dp" />
+
+
+        <!-- Tombol Pilih Gambar -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_select_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Gambar"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Nama Penginapan -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Penginapan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/add_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan nama penginapan"
+            style="@style/CustomEditText"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"/>
+
+        <!-- Input Lokasi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lokasi Penginapan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/add_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan lokasi penginapan"
+            style="@style/CustomEditText"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"/>
+
+        <!-- Input Harga -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga Penginapan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/add_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan harga per malam"
+            android:inputType="numberDecimal"
+            style="@style/CustomEditText"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"/>
+
+        <!-- Input Deskripsi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi Penginapan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/add_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan deskripsi penginapan"
+            style="@style/CustomEditText"
+            android:minLines="3"
+            android:padding="12dp"
+            android:gravity="top"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"/>
+
+        <!-- Input Fasilitas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fasilitas"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/add_facilities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan fasilitas, pisahkan dengan koma"
+            style="@style/CustomEditText"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"/>
+
+        <!-- Tombol Simpan -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save_penginapan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambahkan Penginapan"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

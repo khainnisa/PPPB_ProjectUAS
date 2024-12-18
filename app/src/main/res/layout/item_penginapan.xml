@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:elevation="4dp"
+    android:radius="8dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Gambar Penginapan -->
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Informasi Penginapan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Nama Penginapan -->
+            <!-- LinearLayout Horizontal untuk Nama dan Favorite -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="4dp">
+
+                <!-- Nama Penginapan -->
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nama Penginapan"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+
+                <!-- Tombol Favorite -->
+                <ImageButton
+                    android:id="@+id/btnFavorite"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_favorite"
+                    android:background="@null"
+                    android:contentDescription="Tambah ke Favorit"
+                    android:tint="@color/yellow" />
+            </LinearLayout>
+
+
+            <!-- Lokasi Penginapan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_location"
+                    android:tint="@color/gray" />
+
+                <TextView
+                    android:id="@+id/item_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi Penginapan"
+                    android:textSize="14sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="4dp" />
+            </LinearLayout>
+
+            <!-- Harga Penginapan -->
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp. 500,000/malam"
+                android:textSize="16sp"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Tombol Aksi dengan Ikon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/btn_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="Detail"
+                android:src="@drawable/ic_detail"
+                android:padding="8dp"
+                android:layout_marginEnd="4dp"
+                android:tint="@color/blue"
+                />
+
+            <ImageView
+                android:id="@+id/btn_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="Edit"
+                android:src="@drawable/ic_edit"
+                android:padding="8dp"
+                android:layout_marginEnd="4dp"
+                android:tint="@color/gray" />
+
+            <ImageView
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="Hapus"
+                android:src="@drawable/ic_delete"
+                android:padding="8dp"
+                android:tint="@color/red" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

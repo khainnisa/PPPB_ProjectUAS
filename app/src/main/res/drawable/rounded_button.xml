@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Button pressed/focused state -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#303F9F" /> <!-- Contoh warna saat ditekan -->
+            <corners android:radius="20dp" /> <!-- Bulat dengan radius 8dp, bisa diubah untuk membedakan -->
+        </shape>
+    </item>
+    <!-- Default button state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#536DFE" /> <!-- Warna default dari button -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</selector>
+

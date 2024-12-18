@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project UAS</string>
+    <string name="login">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_user">Login as User</string>
+    <string name="login_admin">Login as Admin</string>
+</resources>
